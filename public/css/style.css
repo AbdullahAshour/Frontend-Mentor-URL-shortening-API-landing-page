@@ -1,0 +1,612 @@
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif !important;
+}
+.container-sm {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+/* Nav Bar */
+
+#f-nav {
+  padding: 5% 0 9rem;
+}
+.logo {
+  padding-top: 5px;
+}
+.nav-item {
+  margin-left: 25px;
+}
+.nav-link {
+  color: hsl(257, 7%, 63%) !important;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.nav-link:hover {
+  color: hsl(260, 8%, 14%) !important;
+}
+#highlight {
+  color: white !important;
+  background-color: hsl(180, 66%, 49%);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+#highlight:hover {
+  opacity: 0.5;
+}
+
+/* Header */
+
+.title-h {
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: hsl(255, 11%, 22%);
+}
+.title-p {
+  font-weight: 500;
+  color: hsl(257, 7%, 63%);
+  font-size: 1.3rem;
+}
+.title-btn {
+  background-color: hsl(180, 66%, 49%);
+  transition: opacity 0.2s;
+  border-style: none;
+  padding: 12px 35px;
+  border-radius: 40px;
+  font-weight: 500;
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 5%;
+}
+.title-btn:hover {
+  opacity: 0.5;
+}
+.title-btn:focus {
+  outline: none;
+}
+.working-img {
+  width: 130%;
+  position: absolute;
+  left: 6.25rem;
+  top: -4.375rem;
+}
+header {
+  margin-bottom: 16%;
+}
+
+/* Form */
+
+#about {
+  background-color: #eff1f7;
+  padding-bottom: 220px;
+}
+.form {
+  background-image: url("/images/bg-shorten-desktop.svg");
+  background-size: cover;
+  height: 170px;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 90px;
+}
+.form input {
+  height: 4.1rem;
+  border-radius: 10px;
+  border: none;
+  margin: 0 20px 0 40px;
+  padding-top: 9px;
+  padding-left: 40px !important;
+  color: hsl(257, 7%, 63%);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.form-row.error input {
+  border: 3px solid hsl(0, 87%, 67%);
+}
+input:focus {
+  outline: none;
+}
+::placeholder {
+  color: hsl(257, 7%, 63%);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.form button {
+  background-color: hsl(180, 66%, 49%);
+  transition: all 0.2s;
+  border-style: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  height: 4.1rem;
+}
+.form button:hover {
+  background-color: hsl(180, 66%, 63%);
+}
+.form button:focus {
+  outline: none;
+}
+.form-row small {
+  position: absolute;
+  top: 73px;
+  left: 55px;
+  color: hsl(0, 87%, 67%);
+  visibility: hidden;
+}
+.form-row.error small {
+  visibility: visible;
+}
+
+/* Url shorter */
+
+.tablee {
+  position: relative;
+  bottom: 70px;
+}
+.trr {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+.trr a:hover {
+  text-decoration: none !important;
+}
+.url-b {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.url {
+  color: hsl(255, 11%, 22%);
+  font-size: 1.1rem;
+}
+.url:hover {
+  color: hsl(255, 11%, 22%);
+}
+.short-btn {
+  display: flex;
+}
+.short-url {
+  color: hsl(180, 66%, 49%);
+  font-size: 1.1rem;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.short-url:hover {
+  color: hsl(180, 66%, 49%);
+}
+.copy-btn {
+  background-color: hsl(180, 66%, 49%);
+  transition: opacity 0.2s;
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copy-btn:hover {
+  opacity: 0.5;
+}
+.copied-btn {
+  background-color: hsl(257, 27%, 26%);
+}
+
+/* Statistics */
+
+.a-statistics {
+  text-align: center;
+  margin: 50px auto 80px auto;
+  line-height: 1.8;
+  width: 500px;
+}
+.a-statistics h2 {
+  color: hsl(255, 11%, 22%);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.a-statistics p {
+  color: hsl(257, 7%, 63%);
+}
+.features {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 30px 15px !important;
+  position: relative;
+  z-index: 2;
+}
+.features h5 {
+  color: hsl(255, 11%, 22%);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.features p {
+  color: hsl(257, 7%, 63%);
+}
+.detailed {
+  margin: 0 30px;
+}
+.icon {
+  background-color: hsl(257, 27%, 26%);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+  position: relative;
+  top: -40px;
+}
+.detailed {
+  position: relative;
+  top: 40px;
+}
+.fully {
+  position: relative;
+  top: 80px;
+}
+.line {
+  background-color: hsl(180, 66%, 49%);
+  width: 100%;
+  height: 10px;
+  position: relative;
+  z-index: 1;
+  top: 160px;
+}
+
+/* boost */
+
+section {
+  background-image: url("/images/bg-boost-desktop.svg") !important;
+  background-size: cover;
+  background-color: hsl(257, 27%, 26%);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+  padding: 70px 0;
+  height: 320px;
+  color: white;
+}
+section h1 {
+  font-size: 3rem;
+}
+section button {
+  background-color: hsl(180, 66%, 49%);
+  transition: all 0.2s;
+  border-style: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  padding: 20px 60px;
+  margin-top: 40px;
+}
+section button:hover {
+  background-color: hsl(180, 66%, 63%);
+}
+section button:focus {
+  outline: none;
+}
+
+/* footer */
+
+footer {
+  background-color: hsl(260, 8%, 14%);
+  padding: 60px 0;
+}
+.footer {
+  display: flex;
+}
+#logo-f {
+  margin-right: auto;
+}
+footer h5 {
+  color: white;
+  margin-bottom: 30px !important;
+}
+footer ul {
+  list-style: none;
+  padding: 0 40px !important;
+}
+.footer-link {
+  text-decoration: none !important;
+  color: hsl(257, 7%, 63%);
+}
+footer li {
+  margin-top: 10px;
+}
+.footer-link:hover {
+  color: hsl(180, 66%, 49%);
+}
+.socials {
+  margin-left: 40px;
+}
+.socials a {
+  margin-left: 25px;
+}
+#socialIcon:hover {
+  fill: hsl(180, 66%, 49%);
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  background-color: hsl(260, 8%, 14%);
+  color: hsl(257, 7%, 63%);
+}
+.attribution a {
+  color: hsl(180, 66%, 49%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: none;
+  color: hsl(180, 66%, 49%);
+}
+
+@media (max-width: 992px) {
+  /* navbar */
+  #f-nav {
+    padding: 5% 0 1.5rem;
+  }
+  .nav-link {
+    color: white !important;
+    font-weight: 700;
+    transition: filter 0.4s;
+    margin-bottom: 10px;
+  }
+  .nav-link:hover {
+    color: white !important;
+  }
+  .navbar-nav2 {
+    border-top: 1px solid hsl(258, 21%, 32%);
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+  .navbar-collapse {
+    background-color: hsl(257, 27%, 26%);
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .navbar-toggler {
+    border: none !important;
+    padding-right: 0px !important;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+  }
+  .nav-item {
+    margin-left: 0px;
+  }
+  #highlight {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  #highlight:hover {
+    opacity: 1;
+  }
+
+  /* header */
+  header {
+    text-align: center;
+  }
+  .working-img {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    width: 150%;
+  }
+  .title-btn:hover {
+    opacity: 1;
+  }
+  #down {
+    order: 2;
+  }
+
+  #up {
+    order: 1;
+  }
+
+  ::placeholder {
+    font-size: 1.1rem;
+  }
+  .form input {
+    margin: 0px 8px 20px 8px;
+    height: 3.2rem;
+    border-radius: 5px;
+    padding-left: 20px !important;
+    padding-top: 0px;
+  }
+
+  .form button {
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 3.2rem;
+    border-radius: 5px;
+    order: 2;
+  }
+  .form button:hover {
+    background-color: hsl(180, 66%, 49%);
+  }
+  .form-row small {
+    position: relative;
+    top: -18px;
+    left: 10px;
+    color: hsl(0, 87%, 67%);
+    visibility: hidden;
+    display: none;
+    order: 1;
+  }
+  .form-row.error small {
+    display: inline;
+  }
+
+  .trr {
+    display: block;
+    padding: 0px;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+  .url-b {
+    border-bottom: 2px solid #eff1f7;
+  }
+  .url {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 12px 15px;
+  }
+  .short-btn {
+    padding: 15px 15px;
+    display: block;
+  }
+  .short-url {
+    padding-bottom: 10px;
+  }
+  .copy-btn {
+    width: 100%;
+  }
+  .copy-btn:hover {
+    opacity: 1;
+  }
+  .a-statistics {
+    text-align: center;
+    margin: 50px auto 80px auto;
+    line-height: 1.8;
+    width: 500px;
+  }
+  .a-statistics h2 {
+    font-size: 1.7rem;
+  }
+  .features {
+    margin: 0 15px 40px;
+    text-align: center;
+  }
+
+  .line {
+    width: 10px;
+    height: 600px;
+    position: absolute;
+    z-index: 1;
+    top: 2700px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+
+  footer ul {
+    padding: 0 20px !important;
+  }
+  .socials {
+    margin-left: 10px;
+  }
+  .socials a {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  #f-nav {
+    padding: 10% 0 1rem;
+  }
+  header {
+    margin-bottom: 35%;
+  }
+  .container-sm {
+    max-width: 90%;
+  }
+  .title-h {
+    margin-top: 45px;
+    font-size: 2.5rem;
+  }
+  .title-p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+  }
+  .title-btn {
+    margin-bottom: 50px;
+  }
+  #about {
+    padding-bottom: 150px;
+  }
+  .form {
+    background-image: url("/images/bg-shorten-mobile.svg");
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  .a-statistics {
+    text-align: center;
+    margin: 50px auto 80px auto;
+    line-height: 1.8;
+    width: 300px;
+  }
+  .a-statistics h2 {
+    font-size: 1.7rem;
+  }
+  .line {
+    width: 10px;
+    height: 700px;
+    position: absolute;
+    z-index: 1;
+    top: 2400px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  section {
+    background-image: url("/images/bg-boost-mobile.svg") !important;
+    padding: 100px 0;
+    height: 300px;
+  }
+  section h1 {
+    font-size: 1.8rem;
+  }
+  section button {
+    padding: 15px 40px;
+    margin-top: 10px;
+  }
+  section button:hover {
+    background-color: hsl(180, 66%, 49%);
+  }
+
+  /* footer */
+
+  .footer {
+    display: inline;
+  }
+  footer {
+    padding: 40px 0;
+    text-align: center;
+  }
+  footer h5 {
+    color: white;
+    margin: 30px 0 20px 0;
+  }
+  footer ul {
+    margin-bottom: 40px;
+  }
+  #logo-f {
+    margin: 30px 0;
+  }
+  .socials a {
+    margin-right: 20px;
+  }
+  .attribution {
+    font-size: 11px;
+  }
+}
