@@ -10,7 +10,7 @@ body {
 
 /* Nav Bar */
 
-#f-nav {
+#nav-bar {
   padding: 5% 0 9rem;
 }
 .logo {
@@ -147,11 +147,11 @@ input:focus {
 
 /* Url shorter */
 
-.tablee {
+.shorten-row {
   position: relative;
   bottom: 70px;
 }
-.trr {
+.shorten-r {
   display: flex;
   justify-content: space-between;
   background-color: white;
@@ -159,7 +159,7 @@ input:focus {
   padding: 15px 30px;
   border-radius: 5px;
 }
-.trr a:hover {
+.shorten-r a:hover {
   text-decoration: none !important;
 }
 .url-b {
@@ -239,9 +239,6 @@ input:focus {
 .features p {
   color: hsl(257, 7%, 63%);
 }
-.detailed {
-  margin: 0 30px;
-}
 .icon {
   background-color: hsl(257, 27%, 26%);
   display: inline-block;
@@ -260,11 +257,10 @@ input:focus {
 }
 .line {
   background-color: hsl(180, 66%, 49%);
-  width: 100%;
-  height: 10px;
+  width: 2.5%;
+  height: 8px;
   position: relative;
-  z-index: 1;
-  top: 160px;
+  top: 150px;
 }
 
 /* boost */
@@ -337,12 +333,11 @@ footer li {
 .socials a {
   margin-left: 25px;
 }
-#socialIcon:hover {
+.socialIcon:hover {
   fill: hsl(180, 66%, 49%);
 }
-
 .attribution {
-  font-size: 13px;
+  font-size: 11px;
   text-align: center;
   background-color: hsl(260, 8%, 14%);
   color: hsl(257, 7%, 63%);
@@ -358,7 +353,8 @@ footer li {
 
 @media (max-width: 992px) {
   /* navbar */
-  #f-nav {
+
+  #nav-bar {
     padding: 5% 0 1.5rem;
   }
   .nav-link {
@@ -400,6 +396,7 @@ footer li {
   }
 
   /* header */
+
   header {
     text-align: center;
   }
@@ -420,9 +417,8 @@ footer li {
     order: 1;
   }
 
-  ::placeholder {
-    font-size: 1.1rem;
-  }
+  /* form */
+
   .form input {
     margin: 0px 8px 20px 8px;
     height: 3.2rem;
@@ -430,7 +426,6 @@ footer li {
     padding-left: 20px !important;
     padding-top: 0px;
   }
-
   .form button {
     margin-left: 8px;
     margin-right: 8px;
@@ -440,6 +435,9 @@ footer li {
   }
   .form button:hover {
     background-color: hsl(180, 66%, 49%);
+  }
+  ::placeholder {
+    font-size: 1.1rem;
   }
   .form-row small {
     position: relative;
@@ -454,7 +452,9 @@ footer li {
     display: inline;
   }
 
-  .trr {
+  /* Url rows */
+
+  .shorten-r {
     display: block;
     padding: 0px;
     justify-content: flex-start;
@@ -483,6 +483,9 @@ footer li {
   .copy-btn:hover {
     opacity: 1;
   }
+
+  /* Statistics */
+
   .a-statistics {
     text-align: center;
     margin: 50px auto 80px auto;
@@ -493,20 +496,24 @@ footer li {
     font-size: 1.7rem;
   }
   .features {
-    margin: 0 15px 40px;
+    margin: 0 15px 0px;
     text-align: center;
   }
-
-  .line {
-    width: 10px;
-    height: 600px;
-    position: absolute;
-    z-index: 1;
-    top: 2700px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
+  .detailed {
+    top: 0px;
   }
+  .fully {
+    top: 0px;
+  }
+  .line {
+    width: 8px;
+    height: 100px;
+    top: 0px;
+    z-index: 1;
+    margin: 0 auto;
+  }
+
+  /* footer */
 
   footer ul {
     padding: 0 20px !important;
@@ -517,10 +524,19 @@ footer li {
   .socials a {
     margin-left: 5px;
   }
+  .socialIcon:hover {
+    fill: white;
+  }
+
+  .attribution {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 576px) {
-  #f-nav {
+  /* header */
+
+  #nav-bar {
     padding: 10% 0 1rem;
   }
   header {
@@ -540,6 +556,9 @@ footer li {
   .title-btn {
     margin-bottom: 50px;
   }
+
+  /* about */
+
   #about {
     padding-bottom: 150px;
   }
@@ -549,6 +568,9 @@ footer li {
     background-repeat: no-repeat;
     background-position: right top;
   }
+
+  /* Statistics */
+
   .a-statistics {
     text-align: center;
     margin: 50px auto 80px auto;
@@ -558,16 +580,9 @@ footer li {
   .a-statistics h2 {
     font-size: 1.7rem;
   }
-  .line {
-    width: 10px;
-    height: 700px;
-    position: absolute;
-    z-index: 1;
-    top: 2400px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-  }
+
+  /* section */
+
   section {
     background-image: url("/images/bg-boost-mobile.svg") !important;
     padding: 100px 0;
@@ -605,8 +620,5 @@ footer li {
   }
   .socials a {
     margin-right: 20px;
-  }
-  .attribution {
-    font-size: 11px;
   }
 }
